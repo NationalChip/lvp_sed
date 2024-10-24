@@ -1,0 +1,9 @@
+# Grus
+# Copyright (C) 2001-2019 NationalChip Co., Ltd
+# ALL RIGHTS RESERVED!
+#
+# Kconfig:
+#---------------------------------------------------------------------------------#
+if POST_PROCESSING_DEVELOPMENT
+    source "lvp/vui/sed/post_processing/development/*/post_processing_version.name"
+endif

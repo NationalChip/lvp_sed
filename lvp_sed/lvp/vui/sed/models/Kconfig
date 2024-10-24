@@ -1,0 +1,35 @@
+# Voice Signal Preprocess
+# Copyright (C) 2001-2019 NationalChip Co., Ltd
+# ALL RIGHTS RESERVED!
+#
+# Kconfig: KWS Kconfig
+#---------------------------------------------------------------------------------#
+
+# kws version list
+choice
+    prompt "SED Select:"
+    config LVP_ENABLE_RNN_SED
+        bool "ENABLE RNN SED"
+
+endchoice
+
+if LVP_ENABLE_RNN_SED
+    choice
+        prompt "RNN SED Model Select:"
+        source "lvp/vui/sed/models/rnn_sed/*/sed.name"
+    endchoice
+
+    config LVP_ENABLE_RNN_SED_STATE_RESET
+        bool "Periodic reset state"
+        default n
+    if LVP_ENABLE_RNN_SED_STATE_RESET
+        config LVP_ENABLE_RNN_SED_STATE_RESET_INTERVAL
+        int "Interval of reset state (s)"
+        default 10
+    endif
+
+    source "lvp/vui/sed/models/rnn_sed/*/version.list"
+    source "lvp/vui/sed/models/rnn_sed/*/*/Kconfig"
+endif
+
+#---------------------------------------------------------------------------------#

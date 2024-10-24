@@ -1,0 +1,6 @@
+choice
+    prompt "Model select:"
+    depends on LVP_RNN_SED_MODEL
+
+    source "lvp/vui/sed/models/rnn_sed/development/*/sed_version.name"
+endchoice

@@ -1,0 +1,29 @@
+# Voice Signal Preprocess
+# Copyright (C) 2001-2021 NationalChip Co., Ltd
+# ALL RIGHTS RESERVED!
+#
+# Kconfig: Post-Processing Kconfig
+#---------------------------------------------------------------------------------#
+
+menuconfig ENABLE_POST_PROCESSING
+    bool "Enable Post Processing"
+    default y
+
+    if ENABLE_POST_PROCESSING
+    choice
+        prompt "Scenes Select:"
+        default POST_PROCESSING_NULL
+        source "lvp/vui/sed/post_processing/*/post_processing.name"
+    endchoice
+
+
+    config VED_SNORING_THRESHOLD
+        int "Snoring Thershold"
+        default 94
+
+    config VED_BABYCRYING_THRESHOLD
+        int "Babycrying Thershold"
+        default 90
+    
+    source "lvp/vui/sed/post_processing/*/Kconfig"
+    endif

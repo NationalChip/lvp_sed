@@ -1,0 +1,26 @@
+menu "Model Param Setting:"
+    depends on LVP_RNN_SED_MODEL_V0_0_4_2023_0815
+
+    # Byte
+    config SED_SNPU_BUFFER_SIZE
+        default 648
+
+    config SED_MODEL_FEATURES_DIM_PER_FRAME
+        default 256
+
+    config SED_MODEL_FEATURES_PADDING_NUM
+        default 0
+
+    config SED_MODEL_EFFECTIVE_FEATURES_PER_FRAME
+        default 256
+
+    config SED_MODEL_INPUT_STRIDE_LENGTH
+        default 1
+
+    config SED_MODEL_INPUT_WIN_LENGTH
+        default 1
+
+    config SED_MODEL_OUTPUT_LENGTH
+        default 2
+
+endmenu

@@ -1,0 +1,11 @@
+# Voice Signal Preprocess
+# Copyright (C) 2001-2020 NationalChip Co., Ltd
+# ALL RIGHTS RESERVED!
+#
+# Kconfig: Model Name
+#---------------------------------------------------------------------------------#
+
+config POST_PROCESSING_DEVELOPMENT_V0_0_2_2023_0901
+    bool "POST_PROCESSING_DEVELOPMENT_V0_0_2_2023_0901"
+
+#---------------------------------------------------------------------------------#

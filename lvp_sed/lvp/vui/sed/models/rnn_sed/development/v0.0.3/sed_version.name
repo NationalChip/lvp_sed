@@ -1,0 +1,11 @@
+# Voice Signal Preprocess
+# Copyright (C) 2001-2020 NationalChip Co., Ltd
+# ALL RIGHTS RESERVED!
+#
+# Kconfig: Model Name
+#---------------------------------------------------------------------------------#
+
+config LVP_RNN_SED_MODEL_V0_0_3_2023_0803
+    bool "LVP_RNN_SED_MODEL_V0_0_3_2023_0803"
+
+#---------------------------------------------------------------------------------#

@@ -1,0 +1,46 @@
+#
+# Grus
+# Copyright (C) 2001-2020 NationalChip Co., Ltd
+# ALL RIGHTS RESERVED!
+#
+# Kconfig: Gurs Kconfig
+#---------------------------------------------------------------------------------#
+# Public Model Values
+config SED_SNPU_BUFFER_SIZE
+    int
+
+config SED_MODEL_FEATURES_DIM_PER_FRAME
+    int
+
+config SED_MODEL_FEATURES_PADDING_NUM
+    int
+
+config SED_MODEL_FEATURES_PADDING_NUM_LEFT
+    int
+
+config SED_MODEL_FEATURES_PADDING_NUM_RIGHT
+    int
+
+config SED_MODEL_EFFECTIVE_FEATURES_PER_FRAME
+    int
+
+config SED_MODEL_INPUT_STRIDE_LENGTH
+    int
+
+config SED_MODEL_INPUT_WIN_LENGTH
+    int
+
+config SED_MODE_EXTRA_INPUT_FRAME
+    int
+
+config SED_MODEL_OUTPUT_LENGTH
+    int
+
+config NPU_TOTAL_SIZE
+    int
+#---------------------------------------------------------------------------------#
+
+source "lvp/vui/sed/models/Kconfig"
+source "lvp/vui/sed/post_processing/Kconfig"
+
+#---------------------------------------------------------------------------------#

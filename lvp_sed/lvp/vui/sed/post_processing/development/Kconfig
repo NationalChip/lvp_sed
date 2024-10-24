@@ -1,0 +1,15 @@
+# Voice Signal Preprocess
+# Copyright (C) 2001-2021 NationalChip Co., Ltd
+# ALL RIGHTS RESERVED!
+#
+# Kconfig: POST-PROCESSING Kconfig
+#---------------------------------------------------------------------------------#
+if POST_PROCESSING_DEVELOPMENT
+    choice
+        prompt "development processing select:"
+        default POST_PROCESSING_DEVELOPMENT_V0_0_1_2023_0725
+        source "lvp/vui/sed/post_processing/development/*/post_processing_version.name"
+    endchoice
+
+    source "lvp/vui/sed/post_processing/development/*/Kconfig"
+endif
